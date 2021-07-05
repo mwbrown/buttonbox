@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name button_mount)(type KiCad)(uri ${KIPRJMOD}/button_mount.pretty)(options "")(descr ""))
+)
