@@ -86,20 +86,16 @@ Wire Wire Line
 Text Label 2100 1500 2    50   ~ 0
 LED_A
 $Comp
-L Connector:Screw_Terminal_01x02 J2
+L Connector:Screw_Terminal_01x04 J2
 U 1 1 60E548D2
-P 2650 2050
-F 0 "J2" H 2730 2042 50  0000 L CNN
-F 1 "LED Terminal" H 2730 1951 50  0000 L CNN
-F 2 "TerminalBlocks_Phoenix:TerminalBlock_Phoenix_MPT-2.54mm_2pol" H 2650 2050 50  0001 C CNN
-F 3 "~" H 2650 2050 50  0001 C CNN
-	1    2650 2050
+P 2750 2050
+F 0 "J2" H 2830 2042 50  0000 L CNN
+F 1 "OSTVN04A150" H 2830 1951 50  0000 L CNN
+F 2 "button_mount:OSTVN04A150" H 2750 2050 50  0001 C CNN
+F 3 "~" H 2750 2050 50  0001 C CNN
+	1    2750 2050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2450 2050 2150 2050
-Wire Wire Line
-	2150 2150 2450 2150
 Wire Wire Line
 	2150 2150 2150 2800
 Wire Wire Line
@@ -109,26 +105,22 @@ Wire Wire Line
 Wire Wire Line
 	1250 1500 2150 1500
 $Comp
-L Connector:Screw_Terminal_01x02 J1
+L Connector:Screw_Terminal_01x04 J1
 U 1 1 60E60A26
-P 2650 1050
-F 0 "J1" H 2730 1042 50  0000 L CNN
-F 1 "SW Terminal" H 2730 951 50  0000 L CNN
-F 2 "TerminalBlocks_Phoenix:TerminalBlock_Phoenix_MPT-2.54mm_2pol" H 2650 1050 50  0001 C CNN
-F 3 "~" H 2650 1050 50  0001 C CNN
-	1    2650 1050
+P 2750 1050
+F 0 "J1" H 2830 1042 50  0000 L CNN
+F 1 "OSTVN04A150" H 2830 951 50  0000 L CNN
+F 2 "button_mount:OSTVN04A150" H 2750 1050 50  0001 C CNN
+F 3 "~" H 2750 1050 50  0001 C CNN
+	1    2750 1050
 	1    0    0    -1  
 $EndComp
-Text Notes 2250 2500 0    50   ~ 0
+Text Notes 2250 2600 0    50   ~ 0
 Driving options:\n- Connect as matrix\n- LED_A to VCC, LED_K to dedicated PWM pins\n
-Text Notes 2450 1300 2    50   ~ 0
+Text Notes 2350 1300 2    50   ~ 0
 Columns driven low, rows pulled high
-Wire Wire Line
-	1000 1150 2450 1150
 Text Label 1950 1150 0    50   ~ 0
 COL_OUT
-Wire Wire Line
-	1800 1050 2450 1050
 Text Label 1950 1050 0    50   ~ 0
 ROW_IN
 Wire Wire Line
@@ -155,4 +147,40 @@ F 3 "~" H 1600 1050 50  0001 C CNN
 	1    1600 1050
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2150 2050 2450 2050
+Wire Wire Line
+	2450 2050 2450 1950
+Wire Wire Line
+	2450 1950 2550 1950
+Connection ~ 2450 2050
+Wire Wire Line
+	2450 2050 2550 2050
+Wire Wire Line
+	2150 2150 2450 2150
+Wire Wire Line
+	2450 2150 2450 2250
+Wire Wire Line
+	2450 2250 2550 2250
+Connection ~ 2450 2150
+Wire Wire Line
+	2450 2150 2550 2150
+Wire Wire Line
+	1800 1050 2450 1050
+Wire Wire Line
+	2450 1050 2450 950 
+Wire Wire Line
+	2450 950  2550 950 
+Connection ~ 2450 1050
+Wire Wire Line
+	2450 1050 2550 1050
+Wire Wire Line
+	1000 1150 2450 1150
+Wire Wire Line
+	2450 1150 2450 1250
+Wire Wire Line
+	2450 1250 2550 1250
+Connection ~ 2450 1150
+Wire Wire Line
+	2450 1150 2550 1150
 $EndSCHEMATC
